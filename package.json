@@ -1,8 +1,8 @@
 {
-  "name": "@BolajiOlajide/helpers",
+  "name": "@BolajiOlajide/alfred",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "git@github.com:BolajiOlajide/helpers.git",
+  "repository": "git@github.com:BolajiOlajide/alfred.git",
   "author": "Bolaji Olajide",
   "license": "MIT",
   "keywords": [
