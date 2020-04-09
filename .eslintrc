@@ -1,0 +1,23 @@
+{
+  "root": true,
+  "extends": "proton",
+  "env": {
+    "node": true,
+    "es6": true,
+    "jest": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "allowImportExportEverywhere": true
+ },
+ "rules": {
+   "require-jsdoc": 0,
+   "babel/new-cap": 0,
+   "camelcase": 0,
+   "global-require": 0
+ },
+ "globals": {
+   "jest": true
+ }
+}
