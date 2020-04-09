@@ -7,7 +7,7 @@
  *
  * @returns {Array}        a slice of the array containing fewer records
  */
-const paginate = (limit: number, page: number, data: [any]) => {
+const paginate = (limit: number, page: number, data: any[]) => {
   const offset = (page - 1) * limit;
   const newLimit = offset + limit;
   return data.slice(offset, newLimit);

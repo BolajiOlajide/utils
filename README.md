@@ -3,6 +3,7 @@
 <!-- markdownlint-disable MD033 -->
 <div align="center">
   <img src="https://github.com/BolajiOlajide/alfred/blob/master/alfred.png?raw=true" alt="alfred avatar" width="500px" />
+  <p align="center">
 </div>
 
 Collection of utility functions/helpers I use in my everyday development.

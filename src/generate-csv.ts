@@ -2,7 +2,7 @@ type csvRecord = {
   [key: string]: string | number
 }
 
-type csvRecords = [csvRecord]
+type csvRecords = csvRecord[]
 
 /**
  * generate a CSV based on an array of records
