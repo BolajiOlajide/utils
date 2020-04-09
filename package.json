@@ -1,7 +1,9 @@
 {
   "name": "@BolajiOlajide/alfred",
-  "version": "1.0.0",
-  "main": "index.js",
+  "version": "0.0.1",
+  "main": "dist/index.js",
+  "module": "dist/index.module.js",
+  "umd": "dist/index.umd.js",
   "repository": "git@github.com:BolajiOlajide/alfred.git",
   "author": "Bolaji Olajide",
   "license": "MIT",
@@ -12,7 +14,26 @@
     "js"
   ],
   "devDependencies": {
+    "@babel/preset-env": "^7.9.5",
+    "@babel/preset-typescript": "^7.9.0",
+    "@rollup/plugin-commonjs": "^11.0.2",
+    "@rollup/plugin-node-resolve": "^7.1.1",
+    "@types/jest": "^25.2.1",
+    "@types/node": "^13.11.1",
     "jest": "^25.1.0",
+    "rollup": "^2.3.4",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-terser": "^5.3.0",
     "typescript": "^3.8.3"
-  }
+  },
+  "scripts": {
+    "prune": "rm -rf dist",
+    "prepublishOnly": ""
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "source": "src/index.ts",
+  "types": "dist/index.d.ts"
 }
