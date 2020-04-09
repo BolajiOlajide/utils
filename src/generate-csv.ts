@@ -1,5 +1,5 @@
 type csvRecord = {
-  [key: string]: string
+  [key: string]: string | number
 }
 
 type csvRecords = [csvRecord]
