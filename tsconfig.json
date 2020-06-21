@@ -8,7 +8,7 @@
     "rootDir": "./src",
     "strict": true,
     "esModuleInterop": true,
-    "lib": [ "es2015", "dom" ],
+    "lib": [ "es2015" ],
     "forceConsistentCasingInFileNames": true
   },
   "include": ["src/**/*"],
