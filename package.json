@@ -1,10 +1,10 @@
 {
-  "name": "@BolajiOlajide/alfred",
+  "name": "@cooproton/utils",
   "version": "0.0.1",
   "main": "dist/index.js",
   "module": "dist/index.module.js",
   "umd": "dist/index.umd.js",
-  "repository": "git@github.com:BolajiOlajide/alfred.git",
+  "repository": "git@github.com:BolajiOlajide/utils.git",
   "author": "Bolaji Olajide",
   "license": "MIT",
   "keywords": [
@@ -33,6 +33,7 @@
     "build": "tsc && rollup -c rollup.config.js",
     "cleanup": "rm -rf dist",
     "prepublishOnly": "yarn test && yarn cleanup && yarn build",
+    "publish": "yarn publish --access public",
     "test": "jest"
   },
   "files": [

@@ -31,7 +31,7 @@ export default {
       sourcemap: true,
     },
     {
-      name: 'alfred',
+      name: '@cooproton/utils',
       file: pkg.umd,
       format: 'umd',
       sourcemap: true,
