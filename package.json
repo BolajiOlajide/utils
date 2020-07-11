@@ -29,6 +29,12 @@
     "ts-jest": "^25.3.1",
     "typescript": "^3.8.3"
   },
+  "contributors": [
+    {
+      "name": "Bolaji Olajide",
+      "url": "https://bolaji.de"
+    }
+  ],
   "scripts": {
     "build": "tsc && rollup -c rollup.config.js",
     "cleanup": "rm -rf dist",
