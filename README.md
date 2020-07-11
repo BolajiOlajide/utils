@@ -1,8 +1,8 @@
-# @BolajiOlajide/alfred
+# @BolajiOlajide/Utils
 
 <!-- markdownlint-disable MD033 -->
 <div align="center">
-  <img src="https://github.com/BolajiOlajide/alfred/blob/master/alfred.png?raw=true" alt="alfred avatar" width="500px" />
+  <img src="https://github.com/BolajiOlajide/utils/blob/master/alfred.png?raw=true" alt="alfred avatar" width="500px" />
   <p align="center">
 </div>
 
@@ -17,7 +17,7 @@ Collection of utility functions/helpers I use in my everyday development.
 This is a list of countries all over the world. It's a pretty long list.
 
 ```js
-const { countries } = require('@BolajiOlajide/alfred');
+const { countries } = require('@BolajiOlajide/utils');
 
 console.log(countries);
 // ['Afghanistan', ...]
@@ -30,7 +30,7 @@ console.log(countries);
 This method is used to generate a csv string from an array of objects. It takes in array of objects with a key-value type of string. The output is a string which will be the records in the array delimited by a comma.
 
 ```js
-const { generateCSV } = require('@BolajiOlajide/alfred');
+const { generateCSV } = require('@BolajiOlajide/utils');
 
 const data = [
   { name: 'John Doe', age: 20 },
@@ -51,7 +51,7 @@ This method is used to generate a not so unique shortcode.
 The default shortcode length is 5.
 
 ```js
-const { generateShortCode } = require('@BolajiOlajide/alfred');
+const { generateShortCode } = require('@BolajiOlajide/utils');
 
 const shortcode = generateShortCode(10);
 console.log(shortcode);
@@ -71,7 +71,7 @@ It's argumumets are:
 * **data**  the array of data to be paginated
 
 ```js
-const { paginate } = require('@BolajiOlajide/alfred');
+const { paginate } = require('@BolajiOlajide/utils');
 
 const data = paginate(2, 2, [
   'Jane',
