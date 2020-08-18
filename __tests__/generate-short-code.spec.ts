@@ -1,9 +1,9 @@
 import { generateShortCode } from '../src';
 
 
-describe('Generate Short Code', () => {
-  test('returns a short code', () => {
-    const shortcode = generateShortCode();
+describe('Generate Short Code', (): void => {
+  test('returns a short code', (): void => {
+    const shortcode: string = generateShortCode();
 
     expect(typeof shortcode).toEqual('string');
   });

@@ -1,8 +1,8 @@
 import { countries } from '../src';
 
 
-describe('Countries', () => {
-  test('returns a list of countries', () => {
+describe('Countries', (): void => {
+  test('returns a list of countries', (): void => {
     expect(countries).toEqual(expect.arrayContaining([
       'Nigeria',
       'Afghanistan',

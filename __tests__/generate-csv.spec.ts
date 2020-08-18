@@ -1,9 +1,10 @@
 import { generateCSV } from '../src';
+import type { csvRecords } from '../src';
 
 
-describe('Generate CSV', () => {
-  test('returns a CSV string', () => {
-    const sampleData = [
+describe('Generate CSV', (): void => {
+  test('returns a CSV string', (): void => {
+    const sampleData: csvRecords = [
       {
         title: 'Mr.',
         name: 'Folorunsho',
@@ -25,12 +26,13 @@ describe('Generate CSV', () => {
         gender: 'Female'
       }
     ];
-    const expected = `title,name,gender
+    const expected: string = `title,name,gender
 Mr.,Folorunsho,Male
 Miss,Williams,Female
 Mrs.,Davids,Female
 Miss,Oladipupo,Female
 `;
+
     expect(generateCSV(sampleData)).toEqual(expected);
   });
 });
