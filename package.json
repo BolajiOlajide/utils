@@ -5,7 +5,10 @@
   "module": "dist/index.module.js",
   "umd": "dist/index.umd.js",
   "repository": "git@github.com:BolajiOlajide/utils.git",
-  "author": "Bolaji Olajide",
+  "author": {
+    "name": "Bolaji Olajide",
+    "url": "https://bolaji.de"
+  },
   "license": "MIT",
   "keywords": [
     "utils",
@@ -38,8 +41,7 @@
   "scripts": {
     "build": "tsc && rollup -c rollup.config.js",
     "cleanup": "rm -rf dist",
-    "prepublishOnly": "yarn test && yarn cleanup && yarn build",
-    "publish": "yarn publish --access public",
+    "publish": "yarn publish --access=public",
     "test": "jest"
   },
   "files": [
