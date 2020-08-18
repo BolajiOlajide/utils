@@ -1,10 +1,9 @@
 import { generateCSV } from '../src';
-import type { csvRecords } from '../src';
 
 
 describe('Generate CSV', (): void => {
   test('returns a CSV string', (): void => {
-    const sampleData: csvRecords = [
+    const sampleData = [
       {
         title: 'Mr.',
         name: 'Folorunsho',

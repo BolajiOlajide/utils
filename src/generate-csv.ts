@@ -42,4 +42,3 @@ const generateCSV = (records: csvRecords): null | string => {
 }
 
 export default generateCSV;
-export type { csvRecords, csvRecord };
