@@ -47,8 +47,7 @@
     "README.md",
     ".gitignore",
     "package.json",
-    "yarn.lock",
-    "alfred.png"
+    "yarn.lock"
   ],
   "source": "src/index.ts",
   "types": "dist/index.d.ts"
