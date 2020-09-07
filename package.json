@@ -1,6 +1,6 @@
 {
   "name": "@bolajiolajide/utils",
-  "version": "0.0.2",
+  "version": "1.0.2",
   "main": "dist/index.js",
   "module": "dist/index.module.js",
   "umd": "dist/index.umd.js",
@@ -22,6 +22,7 @@
     "@rollup/plugin-commonjs": "^11.0.2",
     "@rollup/plugin-node-resolve": "^7.1.1",
     "@types/jest": "^25.2.1",
+    "@types/mocha": "^8.0.3",
     "@types/node": "^13.11.1",
     "eslint": "^6.8.0",
     "eslint-config-proton": "^1.0.7",

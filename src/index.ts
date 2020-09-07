@@ -3,3 +3,7 @@ export { default as generateCSV } from './generate-csv';
 export { default as generateRandomColor } from './generate-random-color';
 export { default as generateShortCode } from './generate-short-code';
 export { default as paginate } from './paginate';
+export { default as isDict } from './is-dict';
+export { default as isString } from './is-string';
+export { default as capitalize } from './capitalize';
+export { default as convertSliceToString } from './convert-slice-to-string';
