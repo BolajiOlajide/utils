@@ -1,4 +1,4 @@
-# @BolajiOlajide/Utils
+# @bolajiolajide/utils
 
 <!-- markdownlint-disable MD033 -->
 <div align="center">
@@ -10,6 +10,45 @@ Collection of utility functions/helpers I use in my everyday development.
 
 ## Methods
 
+<details>
+<summary>capitalize</summary>
+This method is used to capitalize a string.
+
+* **value** string to be capitalize
+
+```js
+const { capitalize } = require('@bolajiolajide/utils');
+
+const data = capitalize('bolaji');
+console.log(data);
+// 'Bolaji'
+```
+</details>
+
+<details>
+<summary>convertSliceToString</summary>
+This method is used to convert a string slice into a string.
+
+* **value**       string slice to convert
+* **separator**   string to use to separate the different items in the slice
+
+```js
+const { convertSliceToString } = require('@bolajiolajide/utils');
+
+const data = convertSliceToString('bolaji');
+console.log(data);
+// 'bolaji'
+
+const data2 = convertSliceToString(['bol', 'aji']);
+console.log(data2);
+// 'bolaji'
+
+const data3 = convertSliceToString(['bol', 'aji', 'pro', 'ton'], '**');
+console.log(data3);
+// 'bol**aji**pro**ton'
+```
+</details>
+
 <!-- markdownlint-disable MD033 -->
 <details>
 <!-- markdownlint-disable MD033 -->
@@ -17,12 +56,11 @@ Collection of utility functions/helpers I use in my everyday development.
 This is a list of countries all over the world. It's a pretty long list.
 
 ```js
-const { countries } = require('@BolajiOlajide/utils');
+const { countries } = require('@bolajiolajide/utils');
 
 console.log(countries);
 // ['Afghanistan', ...]
 ```
-
 </details>
 
 <details>
@@ -30,7 +68,7 @@ console.log(countries);
 This method is used to generate a csv string from an array of objects. It takes in array of objects with a key-value type of string. The output is a string which will be the records in the array delimited by a comma.
 
 ```js
-const { generateCSV } = require('@BolajiOlajide/utils');
+const { generateCSV } = require('@bolajiolajide/utils');
 
 const data = [
   { name: 'John Doe', age: 20 },
@@ -42,7 +80,6 @@ console.log(csv);
 // John Doe, 20
 // Jane Doe, 23
 ```
-
 </details>
 
 <details>
@@ -51,13 +88,50 @@ This method is used to generate a not so unique shortcode.
 The default shortcode length is 5.
 
 ```js
-const { generateShortCode } = require('@BolajiOlajide/utils');
+const { generateShortCode } = require('@bolajiolajide/utils');
 
 const shortcode = generateShortCode(10);
 console.log(shortcode);
 // 637010000
 ```
+</details>
 
+<details>
+<summary>isDict</summary>
+This method returns a boolean depending on whether the argument supplied is a dictionary.
+
+* **value** literal to check type
+
+```js
+const { isDict } = require('@bolajiolajide/utils');
+
+const data = isDict('bolaji');
+console.log(data);
+// false
+
+const data2 = isDict({ amount: 230329 });
+console.log(data2);
+// true
+```
+</details>
+
+<details>
+<summary>isString</summary>
+This method returns a boolean depending on whether the argument supplied is a string.
+
+* **value** literal to check type
+
+```js
+const { isString } = require('@bolajiolajide/utils');
+
+const data = isString('bolaji');
+console.log(data);
+// true
+
+const data2 = isString(230329);
+console.log(data2);
+// false
+```
 </details>
 
 <details>
@@ -71,7 +145,7 @@ It's argumumets are:
 * **data**  the array of data to be paginated
 
 ```js
-const { paginate } = require('@BolajiOlajide/utils');
+const { paginate } = require('@bolajiolajide/utils');
 
 const data = paginate(2, 2, [
   'Jane',
@@ -86,5 +160,4 @@ const data = paginate(2, 2, [
 console.log(data);
 // ['James', 'Bill']
 ```
-
 </details>
