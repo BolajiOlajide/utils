@@ -1,6 +1,6 @@
 {
   "name": "@bolajiolajide/utils",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "main": "dist/index.js",
   "module": "dist/index.module.js",
   "umd": "dist/index.umd.js",
