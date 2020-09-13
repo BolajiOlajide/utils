@@ -1,6 +1,6 @@
 {
   "name": "@bolajiolajide/utils",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "main": "dist/index.js",
   "module": "dist/index.module.js",
   "umd": "dist/index.umd.js",
@@ -41,7 +41,7 @@
   "scripts": {
     "build": "tsc && rollup -c rollup.config.js",
     "cleanup": "rm -rf dist",
-    "publish": "npm publish",
+    "publish": "yarn cleanup && yarn build && npm publish",
     "test": "jest"
   },
   "files": [
