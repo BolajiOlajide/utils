@@ -161,3 +161,24 @@ console.log(data);
 // ['James', 'Bill']
 ```
 </details>
+
+<details>
+<summary>sentencize</summary>
+This method is used to capitalize several words in a phrase depending on the separator.
+It's argumumets are:
+
+* **word**          the word/phrase to sentencize
+* **separator**     a string separating the words in a phrase, defaults to ' '
+
+```js
+const { sentencize } = require('@bolajiolajide/utils');
+
+const data = sentencize('APPLE_MUSIC', '_');
+console.log(data);
+// 'Apple Music'
+
+const data = sentencize('SPOTIFY');
+console.log(data);
+// 'Spotify'
+```
+</details>
