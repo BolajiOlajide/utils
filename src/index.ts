@@ -8,3 +8,4 @@ export { default as isString } from './is-string';
 export { default as capitalize } from './capitalize';
 export { default as convertSliceToString } from './convert-slice-to-string';
 export { default as sentencize } from './sentencize';
+export { default as delay } from './delay';
