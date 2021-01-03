@@ -64,6 +64,18 @@ console.log(countries);
 </details>
 
 <details>
+<summary>delay</summary>
+This method is used to add a delay to an async method. It takes in one argument which is the amount of milliseconds
+to delay.
+
+```js
+const { delay } = require('@bolajiolajide/utils');
+
+await delay(10000); // delay for 10seconds
+```
+</details>
+
+<details>
 <summary>generateCSV</summary>
 This method is used to generate a csv string from an array of objects. It takes in array of objects with a key-value type of string. The output is a string which will be the records in the array delimited by a comma.
 
