@@ -9,3 +9,4 @@ export { default as capitalize } from './capitalize';
 export { default as convertSliceToString } from './convert-slice-to-string';
 export { default as sentencize } from './sentencize';
 export { default as oncify } from './oncify';
+export { default as delay } from './delay';
