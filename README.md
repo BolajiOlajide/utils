@@ -147,6 +147,30 @@ console.log(data2);
 </details>
 
 <details>
+<summary>oncify</summary>
+This method is used to set a function to run only once.
+It's argumument is:
+
+* **fn** the function to be run only once
+
+```js
+const { oncify } = require('@bolajiolajide/utils');
+
+const addTogether = function(num1:number, num2:number):number{
+  return num1+num2
+}
+const addTogetherOnce = oncify(addTogether)
+let firstResult = addTogetherOnce(0,1)
+let secondResult = addTogetherOnce(0,1)
+console.log(firstResult)
+console.log(secondResult)
+});
+// firstResult:  1
+// secondResult: undefined
+```
+</details>
+
+<details>
 <summary>paginate</summary>
 This method is used to lazily paginate an array of items.
 It can be used for client-side pagination where no server exists.
@@ -167,7 +191,7 @@ const data = paginate(2, 2, [
   'Steve',
   'Melissa',
   'Esther',
-  'Shannon
+  'Shannon'
 ]);
 console.log(data);
 // ['James', 'Bill']
