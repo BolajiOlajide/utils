@@ -2,9 +2,14 @@ import { isUrl } from '../src';
 
 
 describe('isUrl', (): void => {
-  test('returns "true" if argument is a valid URL', (): void => {
-    const result: boolean = isUrl('https://google.com');
+  test('returns "true" if argument is a valid HTTP URL', (): void => {
+    const result: boolean = isUrl('https://anniemusic.app');
     expect(result).toBe(true);
+  });
+
+  test('returns "false" if argument isn\'t a HTTP url', (): void => {
+    const result: boolean = isUrl('spotify:track:1YLJVmuzeM2YSUkCCaTNUB');
+    expect(result).toBe(false);
   });
 
   test('returns "false" if argument is an invalid URL', (): void => {
