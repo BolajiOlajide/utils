@@ -10,11 +10,13 @@ describe('convertSliceToString', (): void => {
     expect(result).toEqual(sampleString);
   });
 
+  // eslint-disable-next-line max-len
   test('returns a combination of the string slice if an array is passed as an argument', (): void => {
     const result: string = convertSliceToString([sampleString, sampleString2]);
     expect(result).toEqual(`${sampleString}${sampleString2}`);
   });
 
+  // eslint-disable-next-line max-len
   test('returns a combination of the string slice if an array is passed as an argument with a custom separator', (): void => {
     const result: string = convertSliceToString([sampleString, sampleString2], '***');
     expect(result).toEqual(`${sampleString}***${sampleString2}`);
