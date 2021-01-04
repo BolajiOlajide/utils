@@ -194,3 +194,41 @@ console.log(data);
 // 'Spotify'
 ```
 </details>
+
+<details>
+<summary>isUrl</summary>
+This method is used to check if a string is a valid URL
+
+* **url**          the url to be checked
+
+```js
+const { isUrl } = require('@bolajiolajide/utils');
+
+const response = isUrl('APPLE_MUSIC');
+console.log(response);
+// false
+
+const response = isUrl('https://google.com');
+console.log(response);
+// true
+```
+</details>
+
+<details>
+<summary>isHttpUrl</summary>
+This method is used to check if a string is a valid http URL
+
+* **url**          the url to be checked
+
+```js
+const { isHttpUrl } = require('@bolajiolajide/utils');
+
+const response = isHttpUrl('ftp://dskjdslds');
+console.log(response);
+// false
+
+const response = isUrl('https://google.com');
+console.log(response);
+// true
+```
+</details>
