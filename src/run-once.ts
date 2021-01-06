@@ -5,13 +5,16 @@
  *
  * @returns {Function}      the function that runs only once
  */
-const runOnce = function (fn: Function): Function {
+const runOnce = function (fn: Function): Function | undefined {
   let hasRun = false;
-  return (...args: any) => {
-    if (hasRun === false) {
-      hasRun = true;
-      return fn(...args);
+
+  return (...args: any): any => {
+    if (hasRun) {
+      return undefined;
     }
+
+    hasRun = true;
+    return fn(...args);
   };
 };
 
